@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medieval Realm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>Medieval Realm</h1>
+            <div id="user-info">
+                <span id="header-username">Guest</span>
+                <span id="header-gold">Gold: 0</span> <!-- Display Gold -->
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+        </header>
+        
+        <nav id="main-menu">
+            <ul>
+                <li><a href="#" id="profile-link">Profile</a></li>
+                <li><a href="#" id="inventory-link">Inventory</a></li>
+                <li><a href="#" id="factions-link">Factions</a></li>
+                <li><a href="#" id="market-link">Market</a></li>
+                <li><a href="#" id="messages-link">Messages</a></li>
+                <li><a href="#" id="leaderboard-link">Leaderboard</a></li>
+            </ul>
+        </nav>
+
+        <div id="secondary-features">
+            <button id="property-btn">Property</button>
+            <button id="marriage-btn">Marriage</button>
+            <button id="crime-btn">Crime</button>
+            <button id="missions-btn">Missions</button>
+        </div>
+
+        <main id="game-content">
+            <!-- This is where different sections will be loaded -->
+        </main>
+
+        <div id="signup-form" style="display: none;">
+            <h2>Create Your Account</h2>
+            <input type="text" id="signup-username" placeholder="Choose a username">
+            <input type="password" id="signup-password" placeholder="Create a password">
+            <input type="email" id="signup-email" placeholder="Enter your email">
+            <button id="signup-button">Sign Up</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
